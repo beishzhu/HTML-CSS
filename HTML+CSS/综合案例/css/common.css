@@ -1,9 +1,19 @@
 /* 字体图标 */
 
-@font-face {
+
+/* @font-face {
     font-family: 'icomoon';
     src: url('../fonts/fonts/icomoon.eot?ihfw5h');
     src: url('../fonts/icomoon.eot?ihfw5h#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?ihfw5h') format('truetype'), url('../fonts/icomoon.woff?ihfw5h') format('woff'), url('../fonts/icomoon.svg?ihfw5h#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+} */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?z0wisp');
+    src: url('../fonts/icomoon.eot?z0wisp#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?z0wisp') format('truetype'), url('../fonts/icomoon.woff?z0wisp') format('woff'), url('../fonts/icomoon.svg?z0wisp#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -61,7 +71,6 @@
 .header {
     position: relative;
     height: 105px;
-    background-color: red;
 }
 
 .logo {
@@ -69,14 +78,98 @@
     top: 25px;
     width: 171px;
     height: 61px;
-    background-color: blue;
 }
 
 .logo a {
     display: block;
     width: 171px;
     height: 61px;
+    background: url(../images/logo.png) no-repeat;
     /* font-size: 0;  淘宝的做法 */
     text-indent: -999px;
     overflow: hidden;
+}
+
+
+/* 搜索框 */
+
+.search {
+    position: absolute;
+    top: 25px;
+    left: 346px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #ffffff;
+    /* line-height: 32px;
+    text-align: center; */
+}
+
+
+/* hotwords */
+
+.hotwrods {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwrods a {
+    margin: 0 10px;
+}
+
+
+/* shopcar */
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+
+.shopcar::before {
+    content: '\e905';
+    font-family: 'icomoon';
+    margin-right: 5px;
+    color: #b1191a;
+}
+
+.shopcar::after {
+    content: '\e903';
+    font-family: 'icomoon';
+    margin-left: 10px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    line-height: 14px;
+    background-color: #b1191a;
+    padding: 0 5px;
+    color: #fff;
+    border-radius: 7px 7px 7px 0;
 }

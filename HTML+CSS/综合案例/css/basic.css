@@ -33,7 +33,19 @@ a:hover {
 
 button,
 input {
-    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    /* 去掉搜索框 的外边距*/
+    border: 0;
+    /* 去掉搜索框获取焦点时候的边框 */
+    outline: none;
+    /*  */
+}
+
+
+/*  去掉input 输入框里面的X号 */
+
+input::-webkit-search-cancel-button {
+    display: none;
 }
 
 body {
