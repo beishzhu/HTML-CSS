@@ -1,0 +1,120 @@
+/* 列表页专用样式 */
+
+.nav {
+    overflow: hidden;
+}
+
+.sk {
+    position: absolute;
+    top: 40px;
+    left: 190px;
+    padding: 3px 0 0 14px;
+    border-left: 1px solid #c81523;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li,
+.sk_con ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con ul li a {
+    display: block;
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+    /* font-weight: 700; */
+    /* color: #000; */
+}
+
+.sk_con ul li:last-child a::after {
+    font-family: 'icomoon';
+    content: '\e900';
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_hd img {
+    width: 1200px;
+    height: 120px;
+}
+
+.sk_bd ul li {
+    /* position: relative; */
+    overflow: hidden;
+    float: left;
+    width: 234px;
+    height: 302px;
+    margin: 3px 7px 3px 0;
+    border: 1px solid transparent;
+}
+
+.sk_bd ul li:nth-child(5n) {
+    margin-right: 0;
+}
+
+li {
+    transition: box-shadow .3s;
+}
+
+.sk_bd ul li:hover {
+    /* border: 1px solid red; */
+    /* display: block; */
+    box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, .2);
+}
+
+.sk_bd {
+    text-align: center;
+}
+
+.sk_bd img {
+    width: 190px;
+    height: 170px;
+    vertical-align: middle;
+}
+
+.sk_bd h3 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 0 50px 0 50px;
+}
+
+.sk_bd .drsc {
+    font-size: 12px;
+    color: rgb(176, 176, 176);
+    margin-top: 10px;
+    padding: 0 43px 0 43px;
+}
+
+.nowprice {
+    color: rgb(255, 103, 0);
+    padding-left: 70px;
+}
+
+.delprice,
+.nowprice {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.delprice {
+    text-decoration: line-through;
+    color: rgb(176, 176, 176);
+    padding-right: 70px;
+}
